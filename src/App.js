@@ -1,20 +1,21 @@
 import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
-import Header from './header/Main';
-import Footer from './footer/Main';
-import Main from './manage_state/Main';
-import ModeToggler from './components/ModeToggler';
-import Cards from './cards-app/Main';
-import Events from './events-app/Main';
-import Components from './components-app/Main';
-import Customizing from './customizing-app/Main';
-import Guessnumber from './guess-number/Main';
-import Usinghooks from './using-hooks/Inputcomponent';
-import Propdrilling from './components/Propdrilling';
-import Displayimages from './displaying-images/Main';
-import Reactplayer from './react-player/Main';
-import Audioplayer from './song-selection/Main';
+import Header from './components/header/Main';
+import Footer from './components/footer/Main';
+import Home from './components/home/Main';
+import Managestate from './components/manage_state/Main';
+import ModeToggler from './components/modetoggler/ModeToggler';
+import Cards from './components/cards-app/Main';
+import Events from './components/events-app/Main';
+import Components from './components/components-app/Main';
+import Customizing from './components/customizing-app/Main';
+import Guessnumber from './components/guess-number/Main';
+import Usinghooks from './components/using-hooks/Inputcomponent';
+import Propdrilling from './components/propdrilling/Propdrilling';
+import Displayimages from './components/displaying-images/Main';
+import Reactplayer from './components/react-player/Main';
+import Audioplayer from './components/song-selection/Main';
 
 function App() {
 	return (
@@ -40,6 +41,11 @@ function App() {
 					<li>
 						<Link to='/modetoggler' className='nav-item'>
 							Mode Toggler
+						</Link>
+					</li>
+					<li>
+						<Link to='/manage-state' className='nav-item'>
+							Manage State
 						</Link>
 					</li>
 					<li>
@@ -86,7 +92,8 @@ function App() {
 			</nav>
 			<main class='main'>
 				<Routes>
-					<Route path='/' element={<Main />} />
+					<Route path='/' element={<Home />} />
+					<Route path='/manage-state' element={<Managestate />} />
 					<Route path='/modetoggler' element={<ModeToggler />} />
 					<Route path='/cards' element={<Cards />} />
 					<Route path='/events' element={<Events />} />
