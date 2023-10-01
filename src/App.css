@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 .App {
 	text-align: center;
 }
@@ -37,14 +42,13 @@
 	}
 }
 
-header img{
+header img {
 	width: 40px;
 	display: block;
 	float: left;
 }
 
 nav {
-	background: #ee9972;
 	padding: 0;
 }
 
